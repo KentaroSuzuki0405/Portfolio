@@ -1,16 +1,24 @@
+@charset "UTF-8";
+
+
+.logo {
+  width: 500px;
+}
 
 .l-footer {
-  position: relative;
-  padding-bottom: 90px;
   background: #f8f7f1;
-  padding-top: 50px;
+  background-image: url(img/background/haikei1.jpg);
   &_pattern {
-    position: relative;
     width: 100%;
     height: 444px;
     background: url(/img/pattern.jpg) repeat-x center top;
     background-size: 1550px 440px;
     margin-bottom: 135px;
   }
-  
+  &_banner {
+    &_banneritem {
+      width: 50px;
+    }
+  }
 }
+

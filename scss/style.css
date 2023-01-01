@@ -1,9 +1,17 @@
+body {
+  font-size: 15px;
+}
+
+.c-fontColor_en {
+  color: aqua;
+}
+
 .logo {
   width: 500px;
 }
 
 .l-footer {
-  background: #f8f7f1;
+  background: sandybrown;
   background-image: url(img/background/haikei1.jpg);
 }
 .l-footer_pattern {
@@ -13,6 +21,9 @@
   background-size: 1550px 440px;
   margin-bottom: 135px;
 }
-.l-footer_banner_banneritem {
-  width: 50px;
+
+.l-lineup_item {
+  margin: 10em;
+  width: 30%;
+  height: 30%;
 }/*# sourceMappingURL=style.css.map */

@@ -3,27 +3,48 @@ body {
 }
 
 .c-fontColor_en {
-  color: aqua;
+  color: #bc8f8f;
 }
 
 .logo {
   width: 500px;
 }
 
+.c-fontColor_en {
+  color: #bc8f8f;
+  font-size: 5em;
+  text-align: center;
+  font-weight: bold;
+}
+
 .l-footer {
-  background: sandybrown;
-  background-image: url(img/background/haikei1.jpg);
+  background-color: #fffff0;
 }
 .l-footer_pattern {
   width: 100%;
   height: 444px;
   background: url(/img/pattern.jpg) repeat-x center top;
   background-size: 1550px 440px;
-  margin-bottom: 135px;
+  margin-bottom: 5%;
 }
-
-.l-lineup_item {
-  margin: 10em;
-  width: 30%;
-  height: 30%;
+.l-footer_blockBanner {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.l-footer_blockBannerItem {
+  justify-content: space-between;
+  margin-right: 80px;
+}
+.l-footer_copylightTxt {
+  font-size: 2em;
+  text-align: center;
+  color: #bc8f8f;
+  margin-top: 5%;
+}
+.l-footer_sns {
+  background-color: #bc8f8f;
+}
+.l-footer_snsitem {
+  background-color: #bc8f8f;
 }/*# sourceMappingURL=style.css.map */

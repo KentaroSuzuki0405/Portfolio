@@ -26,7 +26,7 @@ $colorBack: #fffff0;
   &_pattern {
     width: 100%;
     background: url(/img/pattern.jpg) repeat-x
-    margin-bottom: 10%;
+    // margin-bottom: 10%;
   }
   &_block {
     &Banner {
@@ -46,9 +46,8 @@ $colorBack: #fffff0;
     margin-top: 5%;
   }
   &_sns {
-    background-color: $colorText;
     &Box {
-      background-color: $colorText;
       margin: 50px 50px 50px 50px;
+
     }
   }

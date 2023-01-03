@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+// 基本調整
+a {
+  text-decoration: none;
+}
+
+ul,li {
+  list-style: none;
+}
+
 body {
   font-size: 15px;
 }
@@ -9,17 +18,65 @@ $colorBack: #fffff0;
 .c-fontColor_en {
   color: $colorText;
 }
-
 .logo {
   width: 500px;
 }
 
 .c-fontColor_en {
   color: $colorText;
-  font-size: 5em;
+  font-size: 17px;
   text-align: center;
   font-weight: bold;
 }
+
+
+// ヘッダー
+.l-header {
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 999;
+}
+
+.hamburger span{
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: relative;
+  transition: ease .4s;
+  display: block;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  margin: 8px 0;
+}
+
+.hamburger span:nth-child(3) {
+  top: 0;
+}
+
+.header__nav.active {
+  transform: translateX(0);
+}
+
+.hamburger.active span:nth-child(1) {
+  top: 5px;
+  transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  top: -13px;
+  transform: rotate(-45deg);
+
 // フッター
 .l-footer {
   background-color: $colorBack;
@@ -35,19 +92,32 @@ $colorBack: #fffff0;
       margin-right: 10%;
       &Item {
         justify-content: space-between;
-        margin-right: 80px;
+        margin-right: 10px;
       }
   }
   }
-  &_copylightTxt {
-    font-size: 2em;
+  &_copyRightTxt {
     text-align: center;
     color: $colorText;
     margin-top: 5%;
   }
   &_sns {
+    margin-top: 5%;
     &Box {
-      margin: 50px 50px 50px 50px;
-
+      display: flex;
+      justify-content: center;
+      &Item {
+        margin-right: 20px;
+        &Inner {
+          margin: 50px;
+        }
+      }
     }
   }
+  &_copy {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    }
+  }
+}

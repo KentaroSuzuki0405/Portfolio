@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NekoPan</title>
+    <title>catPan</title>
     <meta property="og:type" content="">
     <meta property="og:title" content="">
     <meta property="og:url" content="">
@@ -14,7 +14,13 @@
   </head>
   <body>
     <div class="wrap">
-      <header class="hamburger"></header>
+      <header class="l-header">
+      </header>
+      <button class="header_hamburger hamburger active" id="js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <div class="logo">
         <a href="#">
           <img src="img/logo.png">
@@ -186,27 +192,47 @@
         </div>
         <div class="l-footer_sns">
           <ul class="l-footer_snsBox">
-            <li class="l-footer_snsitem">
-              <img src="img/icon/Twitter.png">
+            <li class="l-footer_snsBoxItem">
+              <div class="l-footer_snsBoxInner">
+                <img src="img/icon/Twitter.png">
+              </div>
             </li>
-            <li class="l-footer_snsitem">
-              <a href="img/icon/Twitter.png"></a>
+            <li class="l-footer_snsBoxItem">
+              <div class="l-footer_snsBoxInner">
+                <img src="img/icon/insta.png">
+              </div>
             </li>
-            <li class="l-footer_snsitem">
-              <a href="img/icon/Twitter.png"></a>
+            <li class="l-footer_snsBoxItem">
+              <div class="l-footer_snsBoxInner">
+                <img src="img/icon/map.png">
+              </div>
             </li>
-            <li class="l-footer_snsitem">
-              <a href="img/icon/Twitter.png"></a>
+            <li class="l-footer_snsBoxItem">
+              <div class="l-footer_snsBoxInner">
+                <img src="img/icon/shopping.png">
+              </div>
             </li>
           </ul>
         </div>
-        <div class="l-footer_copyright">
-          <p class="l-footer_copylightTxt">
-            <small>© ALL Neko Company Inc. All Rights Reserved.</small>
+        <div class="l-footer_copy">
+          <div class="l-footer_copyLogo">
+            <img src="img/footerlogo.png">
+          </div>
+        </div>
+        <div class="l-footer_copyRight">
+          <p class="l-footer_copyRightTxt">
+            <small>© ALL cat Company Inc. All Rights Reserved.</small>
           </p>
         </div>
       </footer>
     </div>
     <!-- wrap -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+      <script src="./js/main.js"></script>
+      $(function(){
+
+      });
+    </script>
   </body>
 </html>

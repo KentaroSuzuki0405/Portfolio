@@ -1,3 +1,11 @@
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
 body {
   font-size: 15px;
 }
@@ -12,39 +20,93 @@ body {
 
 .c-fontColor_en {
   color: #bc8f8f;
-  font-size: 5em;
+  font-size: 17px;
   text-align: center;
   font-weight: bold;
 }
 
-.l-footer {
+.l-header {
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 999;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: relative;
+  transition: ease 0.4s;
+  display: block;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  margin: 8px 0;
+}
+
+.hamburger span:nth-child(3) {
+  top: 0;
+}
+
+.header__nav.active {
+  transform: translateX(0);
+}
+
+.hamburger.active span:nth-child(1) {
+  top: 5px;
+  transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  top: -13px;
+  transform: rotate(-45deg);
+}
+.hamburger.active span:nth-child(3) .l-footer {
   background-color: #fffff0;
 }
-.l-footer_pattern {
+.hamburger.active span:nth-child(3) .l-footer_pattern {
   width: 100%;
-  height: 444px;
-  background: url(/img/pattern.jpg) repeat-x center top;
-  background-size: 1550px 440px;
-  margin-bottom: 5%;
+  background: url(/img/pattern.jpg) repeat-x;
 }
-.l-footer_blockBanner {
+.hamburger.active span:nth-child(3) .l-footer_blockBanner {
   display: flex;
   margin-left: 10%;
   margin-right: 10%;
 }
-.l-footer_blockBannerItem {
+.hamburger.active span:nth-child(3) .l-footer_blockBannerItem {
   justify-content: space-between;
-  margin-right: 80px;
+  margin-right: 10px;
 }
-.l-footer_copylightTxt {
-  font-size: 2em;
+.hamburger.active span:nth-child(3) .l-footer_copyRightTxt {
   text-align: center;
   color: #bc8f8f;
   margin-top: 5%;
 }
-.l-footer_sns {
-  background-color: #bc8f8f;
+.hamburger.active span:nth-child(3) .l-footer_sns {
+  margin-top: 5%;
 }
-.l-footer_snsitem {
-  background-color: #bc8f8f;
+.hamburger.active span:nth-child(3) .l-footer_snsBox {
+  display: flex;
+  justify-content: center;
+}
+.hamburger.active span:nth-child(3) .l-footer_snsBoxItem {
+  margin-right: 20px;
+}
+.hamburger.active span:nth-child(3) .l-footer_snsBoxItemInner {
+  margin: 50px;
+}
+.hamburger.active span:nth-child(3) .l-footer_copy {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
 }/*# sourceMappingURL=style.css.map */

@@ -9,6 +9,8 @@
     <meta property="og:title" content="">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="scss/reset.css">
     <link rel="stylesheet" href="scss/style.css">
   </head>
@@ -56,8 +58,20 @@
       <main class="mainContents">
         <div class="hero">
           <div class="heroBox">
-            <img src="img/hero/herocat1.jpg">
-            <img src="img/hero/heropan1.jpg">
+            <div class="slider">
+              <div>
+                <img src="img/hero/herocat1.jpg">
+              </div>
+              <div>
+                <img src="img/hero/heropan1.jpg">
+              </div>
+              <div>
+                <img src="img/hero/herocat2.jpg">
+              </div>
+              <div>
+                <img src="img/hero/heropan2.jpg">
+              </div>
+            </div>
           </div>
         </div>
         <section class="info">
@@ -245,18 +259,22 @@
     </div>
     <!-- wrap -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
       $(function() {
         $('.hamburger').click(function() {
           $(this).toggleClass('active');
- 
         if ($(this).hasClass('active')) {
             $('.globalMenuSp').addClass('active');
         } else {
             $('.globalMenuSp').removeClass('active');
         }
-    });
-});
+        });
+    //   $('.your-class').slick({
+    //   setting-name: setting-value
+    // });
+        $("slider").slick();
+      });
     </script>
   </body>
 </html>

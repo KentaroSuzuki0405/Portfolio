@@ -21,6 +21,18 @@ $colorBack: #fffff0;
 .logo {
   width: 500px;
 }
+.en {
+  font-size: 6rem;
+  letter-spacing: 0.04em;
+  line-height: 7rem;
+}
+.jp {
+  font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0.14em;
+    font-weight: 700;
+}
+
 
 .c-fontColor_en {
   color: $colorText;
@@ -150,9 +162,6 @@ nav.globalMenuSp ul li a {
 }
 
 .head-sns {
-  &_list {
-
-  }
   &_item {
     display: flex;
     width: 5%;
@@ -208,3 +217,60 @@ nav.globalMenuSp.active {
     margin-top: 5%;
     }
   }
+
+// LINEUP
+.lineup {
+  background-image: url(./img/background/haikei3.jpg);
+  padding-top: 116px;
+  padding-bottom: 18px;
+  position: relative;
+  text-align: center;
+  margin: 0 auto 95px;
+  color: $colorText;
+}
+.lineup_title {
+  text-align: center;
+  margin: 0 auto 95px;
+  color: $colorText;
+}
+.lineup_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1210px;
+  margin: 0 auto;
+  width: 89.3vw;
+}
+.lineup_item {
+  width: 47.1%;
+  position: relative;
+  margin-bottom: 100px;
+}
+.lineup_txt {
+  font-size: 1.7rem;
+  line-height: 38px;
+  padding: 0 25px;
+  letter-spacing: 0.01em;
+}
+.lineup_img {
+  margin-bottom: 55px;
+  
+}
+
+
+// slider
+
+
+
+// opening
+@media (min-width: 950px ) {
+  .opening {
+    display: flex;
+  }
+  .slider_left {
+    flex-grow: 1;
+  }
+  .slider_right {
+    flex-grow: 1;
+  }
+}

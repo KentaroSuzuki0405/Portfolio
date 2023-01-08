@@ -56,24 +56,25 @@
         </div>
       </div>
       <main class="mainContents">
-        <div class="hero">
-          <div class="heroBox">
-            <div class="slider">
+        <div class="opening">
+          <div class="slider_left">
               <div>
                 <img src="img/hero/herocat1.jpg">
               </div>
               <div>
                 <img src="img/hero/heropan1.jpg">
               </div>
-              <div>
-                <img src="img/hero/herocat2.jpg">
-              </div>
-              <div>
-                <img src="img/hero/heropan2.jpg">
-              </div>
+          </div>
+          <div class="slider_right">
+            <div>
+              <img src="img/hero/herocat2.jpg">
+            </div>
+            <div>
+              <img src="img/hero/heropan2.jpg">
             </div>
           </div>
         </div>
+        <!-- opening -->
         <section class="info">
           <ul class="infoList">
             <li>
@@ -97,6 +98,7 @@
           </ul>
           <div class="newsList"></div>
         </section>
+        <!-- info -->
         <div class="intoro">
           <div class="intoro_title">
             <img src="img/intro/intorologo1.png">
@@ -133,6 +135,7 @@
             </p>
           </div>
         </div>
+        <!-- intoro -->
         <div class="flavor">
           <h2 class="flavor_title">
             <p class="en">FLAVOR</p>
@@ -145,7 +148,7 @@
             <img src="img/flavor/falvorchoco.jpg">
           </div>
         </div>
-        <!-- フレーバー -->
+        <!-- flavor -->
         <div class="lineup">
           <h2 class="lineup_title">
             <p class="en">LINE UP</p>
@@ -156,25 +159,38 @@
               <p class="lineup_img">
                 <img src="img/lineup/lineuppan1.jpg">
               </p>
-              <div class="lineup_txt"></div>
+              <div class="lineup_txt">
+                <p>1月限定フレーバーは「ねこねこ食パン 黒豆とわらび餅」🎍</p>
+                <p>ねこねこ食パンのミルキーな生地に黒豆を練り込み、わらび餅を入れて焼き上げました✨</p>
+                <p>黒豆の甘みと粒感、わらび餅の食感がアクセントとなり、これまでにないもちもち感をお楽しみいただけます😋</p>
+              </div>
             </div>
             <div class="lineup_item">
               <p class="lineup_img">
                 <img src="img/lineup/lineuppan2.jpg">
               </p>
-              <div class="lineup_txt"></div>
+              <div class="lineup_txt">
+                <p>1/1～1/31までの期間限定で、オンラインストアにて「ねこねこ食パン もちもちイチゴ」を販売いたします🍓</p>
+                <p>お餅のようなもちもち感、甘酸っぱいいちごチョコで冬の定番スイーツ”いちご大福”をイメージしました🤗</p>
+              </div>
             </div>
-            <div class="lineup_box">
-              <div class="l-lineup_item">
+            <div class="lineup_item">
+              <div class="l-lineup_img">
                 <img src="img/lineup/lineuppan3.jpg">
               </div>
-              <div class="lineup_txt"></div>
+              <div class="lineup_txt">
+                <p>11/3より「ねこねこ食パン　表参道店」、CUTECUBE HARAJUKU「ano ano」、オンラインストアの3拠点限定で「ねこねこ食パン　トリュフ」が登場✨</p>
+                <p>トリュフペースト、トリュフオイルを練りこんで焼き上げたトリュフが香るねこねこ食パンです🐈</p>
+              </div>
             </div>
             <div class="lineup_item">
               <p class="lineup_img">
                 <img src="img/lineup/lineuppan4.jpg">
               </p>
-              <div class="lineup_txt"></div>
+              <div class="lineup_txt">
+                <p>11/3より「ねこねこ食パン　表参道店」、CUTECUBE HARAJUKU「ano ano」、オンラインストアの3拠点限定で「ねこねこ食パン　レインボー」が登場🌈</p>
+                <p>食べたらなんとメープル風味です！😲🍁</p>
+              </div>
             </div>
           </div>
         </div>
@@ -264,16 +280,13 @@
       $(function() {
         $('.hamburger').click(function() {
           $(this).toggleClass('active');
-        if ($(this).hasClass('active')) {
-            $('.globalMenuSp').addClass('active');
-        } else {
+            if ($(this).hasClass('active')) {
+          $('.globalMenuSp').addClass('active');
+          } else {
             $('.globalMenuSp').removeClass('active');
-        }
+          }
         });
-    //   $('.your-class').slick({
-    //   setting-name: setting-value
-    // });
-        $("slider").slick();
+
       });
     </script>
   </body>

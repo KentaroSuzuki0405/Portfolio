@@ -19,6 +19,19 @@ body {
   width: 500px;
 }
 
+.en {
+  font-size: 6rem;
+  letter-spacing: 0.04em;
+  line-height: 7rem;
+}
+
+.jp {
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+}
+
 .c-fontColor_en {
   color: #bc8f8f;
   font-size: 17px;
@@ -183,4 +196,58 @@ nav.globalMenuSp.active {
   display: flex;
   justify-content: center;
   margin-top: 5%;
+}
+
+.lineup {
+  background-image: url(./img/background/haikei3.jpg);
+  padding-top: 116px;
+  padding-bottom: 18px;
+  position: relative;
+  text-align: center;
+  margin: 0 auto 95px;
+  color: #bc8f8f;
+}
+
+.lineup_title {
+  text-align: center;
+  margin: 0 auto 95px;
+  color: #bc8f8f;
+}
+
+.lineup_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1210px;
+  margin: 0 auto;
+  width: 89.3vw;
+}
+
+.lineup_item {
+  width: 47.1%;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.lineup_txt {
+  font-size: 1.7rem;
+  line-height: 38px;
+  padding: 0 25px;
+  letter-spacing: 0.01em;
+}
+
+.lineup_img {
+  margin-bottom: 55px;
+}
+
+@media (min-width: 950px) {
+  .opening {
+    display: flex;
+  }
+  .slider_left {
+    flex-grow: 1;
+  }
+  .slider_right {
+    flex-grow: 1;
+  }
 }/*# sourceMappingURL=style.css.map */

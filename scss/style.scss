@@ -15,31 +15,37 @@ body {
 $colorText: #bc8f8f;
 $colorBack: #fffff0;
 
+// タイトル
 .c-fontColor_en {
+    color: $colorText;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-weight: 700;
+}
+.c-fontColor_jp {
   color: $colorText;
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  text-align: center;
 }
 .logo {
   width: 500px;
 }
 .en {
-  font-size: 6rem;
+  font-size: 1.6rem;
+  line-height: 4rem;
   letter-spacing: 0.04em;
-  line-height: 7rem;
 }
 .jp {
-  font-size: 2rem;
-    line-height: 3rem;
-    letter-spacing: 0.14em;
-    font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 4.1rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px;
 }
 
-
-.c-fontColor_en {
-  color: $colorText;
-  font-size: 17px;
-  text-align: center;
-  font-weight: bold;
-}
 
 
 // ヘッダー
@@ -171,8 +177,66 @@ nav.globalMenuSp ul li a {
 /* このクラスを、jQueryで付与・削除する */
 nav.globalMenuSp.active {
   opacity: 100;
-
 }
+
+// opening
+.mainVisual {
+  display: flex;
+}
+@media screen and (max-width:678px) { 
+  .mainVisual {
+      display: block;
+  }
+}
+.swiper-container01 {
+  width: 100%;
+  max-width: 940px;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.swiper-container02 {
+  width: 100%;
+  max-width: 940px;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media screen and (max-width:678px) { 
+  .swiper-container01 {
+      height: 250px;
+  }
+  .swiper-container02 {
+      height: 250px;
+  }
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #2d1408cc;
+}
+.bgc-01 {
+  background-image: url("/Users/mahiro/Portfolio/Portfolio/img/hero/herocat1.jpg");
+  background-size: cover;
+}
+.bgc-02 {
+  background-color: #d4f0d9;
+}
+.bgc-03 {
+  background-color: #e8cae2;
+}
+.bgc-04 {
+  background-color: #ebecc6;
+}
+.bgc-05 {
+  background-color: #d4d6f0;
+}
+.bgc-06 {
+  background-color: #e8cfca;
+}
+
 
 // フッター
 .l-footer {
@@ -218,9 +282,82 @@ nav.globalMenuSp.active {
     }
   }
 
+// FLAVOR
+.flavor_slide .slick-slide {
+  width: 600px;
+  height: 400px;
+  margin: 0 40px;
+  position: relative;
+  overflow: hidden;
+}
+.flavor_slide .slick-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.flavor_slide .slick-arrow {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 0;
+  position: absolute;
+  top: 180px;
+  z-index: 1;
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+}
+.flavor_slide .slick-arrow::before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #09000d;
+  border-width: 3px 3px 0 0;
+  position: absolute;
+  top: 24px;
+  transform: rotate(45deg);
+}
+.flavor_slide .slick-next {
+  right: 0;
+}
+.flavor_slide .slick-prev {
+  left: 0;
+}
+.flavor_slide .slick-next::before {
+  left: 20px;
+}
+.flavor_slide .slick-prev::before {
+  border-width: 0 0 3px 3px;
+  right: 22px;
+}
+.dots-2 .slick-dots {
+  text-align: center;
+}
+.dots-2 .slick-dots li {
+  display: inline-block;
+}
+.dots-2 .slick-dots button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 6px;
+  font-size: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background: #bcbcbc;
+  border-radius: 50%;
+}
+
+
 // LINEUP
 .lineup {
-  background-image: url(./img/background/haikei3.jpg);
+  background-color: antiquewhite;
   padding-top: 116px;
   padding-bottom: 18px;
   position: relative;
@@ -231,7 +368,6 @@ nav.globalMenuSp.active {
 .lineup_title {
   text-align: center;
   margin: 0 auto 95px;
-  color: $colorText;
 }
 .lineup_list {
   display: flex;
@@ -254,8 +390,31 @@ nav.globalMenuSp.active {
 }
 .lineup_img {
   margin-bottom: 55px;
-  
 }
+
+// SHOP
+.shop_main {
+  justify-content: space-between;
+  display: flex;
+  margin: 5% 10% 10% 10%;
+}
+.shop_btn,
+a.shop_btn {
+  font-size: 1.7rem;
+  color: #fff;
+  background-color:#f0d489;
+}
+.shop_btn:hover,
+a.shop_btn:hover {
+  color: #fff;
+  background: #f0d489;
+}
+
+a.btn--radius {
+   border-radius: 100vh;
+   padding: 20px 50px;
+}
+
 
 
 // slider
@@ -263,14 +422,14 @@ nav.globalMenuSp.active {
 
 
 // opening
-@media (min-width: 950px ) {
-  .opening {
-    display: flex;
-  }
-  .slider_left {
-    flex-grow: 1;
-  }
-  .slider_right {
-    flex-grow: 1;
-  }
-}
+// @media (min-width: 950px ) {
+//   .opening {
+//     display: flex;
+//   }
+//   .slider_left {
+//     flex-grow: 1;
+//   }
+//   .slider_right {
+//     flex-grow: 1;
+//   }
+// }

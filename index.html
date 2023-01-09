@@ -9,6 +9,7 @@
     <meta property="og:title" content="">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="scss/reset.css">
@@ -56,24 +57,40 @@
         </div>
       </div>
       <main class="mainContents">
-        <div class="opening">
-          <div class="slider_left">
-              <div>
+        <div class="mainVisual">
+          <div class="swiper-container01">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide bgc-01"></div>
+                  <div class="swiper-slide bgc-02">😊</div>
+                  <div class="swiper-slide bgc-03">😂</div>
+              </div>
+          </div>
+          <div class="swiper-container02">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide bgc-04">😚</div>
+                  <div class="swiper-slide bgc-05">😇</div>
+                  <div class="swiper-slide bgc-06">😌</div>
+              </div>
+          </div>
+        </div>
+        <!-- <div class="opening">
+          <div class="swiper-left">
+              <div class="swiper-wrapper">
                 <img src="img/hero/herocat1.jpg">
               </div>
-              <div>
+              <div class="swiper-wrapper">
                 <img src="img/hero/heropan1.jpg">
               </div>
           </div>
           <div class="slider_right">
-            <div>
+            <div class="swiper-wrapper">
               <img src="img/hero/herocat2.jpg">
             </div>
-            <div>
+            <div class="swiper-wrapper">
               <img src="img/hero/heropan2.jpg">
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- opening -->
         <section class="info">
           <ul class="infoList">
@@ -136,13 +153,13 @@
           </div>
         </div>
         <!-- intoro -->
-        <div class="flavor">
+        <div class="flavor_box">
           <h2 class="flavor_title">
-            <p class="en">FLAVOR</p>
-            <p class="jp">フレーバー</p>
+            <p class="c-fontColor_en">FLAVOR</p>
+            <p class="c-fontColor_jp">フレーバー</p>
           </h2>
-          <div class="flavor_slide">
-            <img src="img/flavor/falvormilk.jpg">
+          <div class="flavor flavor_slide">
+            <img src="img/flavor/falvormilk.jpg"><p class="c-fontColor_en">PLAIN</p>
             <img src="img/flavor/falvororange.jpg">
             <img src="img/flavor/falvorcheese.jpg">
             <img src="img/flavor/falvorchoco.jpg">
@@ -151,8 +168,8 @@
         <!-- flavor -->
         <div class="lineup">
           <h2 class="lineup_title">
-            <p class="en">LINE UP</p>
-            <p class="jp">ラインナップ</p>
+            <p class="c-fontColor_en">LINE UP</p>
+            <p class="c-fontColor_jp">ラインナップ</p>
           </h2>
           <div class="lineup_list">
             <div class="lineup_item">
@@ -175,7 +192,7 @@
               </div>
             </div>
             <div class="lineup_item">
-              <div class="l-lineup_img">
+              <div class="lineup_img">
                 <img src="img/lineup/lineuppan3.jpg">
               </div>
               <div class="lineup_txt">
@@ -197,10 +214,13 @@
         <!-- ラインナップ -->
         <div class="shop">
           <h2 class="shop_title">
-            <p class="en">SHOP</p>
-            <p class="jp">ショップ</p>
+            <p class="c-fontColor_en">SHOP</p>
+            <p class="c-fontColor_jp">ショップ</p>
           </h2>
-          <div class="shop_main"></div>
+          <div class="shop_main">
+            <a href="" class="btn shop_btn btn--radius">取り扱い店舗はこちら</a>
+            <a href="" class="btn shop_btn btn--radius">公式オンラインストア</a>
+          </div>
         </div>
         <!-- ショップ -->
       </main>
@@ -274,8 +294,10 @@
       </footer>
     </div>
     <!-- wrap -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type='text/javascript' src="./script.js"></script>
     <script>
       $(function() {
         $('.hamburger').click(function() {
@@ -287,6 +309,15 @@
           }
         });
 
+        $('.flavor').slick({
+          arrows: true, // 前・次のボタンを表示する
+          dots: true, // ドットナビゲーションを表示する
+          appendDots: $('.dots-2'), // ドットナビゲーションの生成位置を変更
+          speed: 1000, // スライドさせるスピード（ミリ秒）
+          slidesToShow: 1, // 表示させるスライド数
+          centerMode: true, // slidesToShowが奇数のとき、現在のスライドを中央に表示する
+          variableWidth: true, // スライド幅の自動計算を無効化
+        });
       });
     </script>
   </body>

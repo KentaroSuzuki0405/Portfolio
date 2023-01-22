@@ -704,8 +704,7 @@ nav.globalMenuSp-list_item:last-child {
 // FLAVOR↑
 // lineup↓
 .top-lineup {
-  background: url("../img/background/top-intro_bg.png") no-repeat center 
-  background-size cover;
+  background: url("../img/background/top-intro_bg.png");
   padding-top: 116px;
   padding-bottom: 18px;
   position: relative;
@@ -1097,10 +1096,57 @@ animation-direction: reverse;
   .hamburger.active {
     right: 42px;
   }
+  .globalMenuSp-logo{
+    margin-top: -42px;
+  }
+  .globalMenuSp-logo a img {
+    width: 20%;
+  }
+  .globalMenuSp-list_item1, .globalMenuSp-list_item2, .globalMenuSp-list_item3 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: -11px;
+  }
+  .globalMenuSp-list_item3{
+    margin-top: 40px;
+
+  }
+  .globalMenuSp-list{
+    margin-top: 20px;
+  }
+  .head-sns__onList {
+    width: 148px;
+    display: flex;
+    position: absolute;
+    left: 43%;
+    top: 70%;
+    bottom: 20%;
+    &::before{
+      content: "";
+      width: 55px;
+      height: 1px;
+      background: #b28d99;
+      position: absolute;
+      top: -207px;
+      left: 37%;
+      transform: translateX(-50%);
+    }
+}
+.globalMenuSp_box {
+  position: absolute;
+  right: 27px;
+  display: grid;
+  bottom: 10px;
+  &Item{
+    width: 141px;
+  }
+}
+
 
   .swiper-wrapper{
     width: 100%;
   }
+
 .mainVisual{
   display: block;
   .swiper-container01{
@@ -1112,18 +1158,60 @@ animation-direction: reverse;
     height: 50%;
   }
 }
+
 .top-intro__inner{
   display: block;
 }
 .top-intro__wrap{
   margin: 0 auto;
-  display: contents;
+  display: block;
   top: 40%;
   left: 20%;
   position: absolute;
-  justify-content: space-between;
-  width: 87.5vw;
-  max-width: 1415px;
+
+}
+
+.top-shop__main{
+  display: block;
+  width: 171.5vw;
+  margin-left: 65px;
+}
+.top-shop__txt{
+  font-size: 1.4rem;
+  line-height: 0;
+  margin-bottom: 30px;
+}
+.top-shop__link::before {
+  content: "";
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  border-radius: 12px;
+  transition: 0.2s all ease-out 0s;
+}
+.top-shop__link {
+  display: block;
+  position: relative;
+  padding: 20px 0 55px;
+}
+
+.foot-banner {
+  width: 93vw;
+  display: flex;
+  max-width: 350px;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.foot-banner__item {
+  width: 33.3%;
+  margin: 0 0 52px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 10px;
 }
 
 }
+// @media screen and (max-width: 751px)

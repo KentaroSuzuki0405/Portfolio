@@ -126,15 +126,18 @@ body.opened .head-sns__item::before {
 
 /*　ハンバーガーボタン　*/
   .hamburger {
-  display : block;
-  position: fixed;
-  z-index : 999;
-  top: 70px;
-  right: 64px;
-  width: 50px;
-  height: 48px;
-  cursor: pointer;
-  text-align: center;
+    position: fixed;
+    z-index: 999;
+    /* top: 70px; */
+    /* right: 64px; */
+    /* width: 50px; */
+    top: 70px;
+    right: 50px;
+    width: 73px;
+    height: 48px;
+    /* height: 48px; */
+    cursor: pointer;
+    text-align: center;
   }
   .hamburger span {
    transition: .25s ease-out;
@@ -143,17 +146,17 @@ body.opened .head-sns__item::before {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    height: 2px;
+    height: 4px;
     background-color: #A9808C;
   }
   .hamburger span:nth-child(1) {
   top: 0px;
   }
   .hamburger span:nth-child(2) {
-  top: 10px;
+  top: 20px;
   }
   .hamburger span:nth-child(3) {
-  top: 22px;
+  top: 40px;
   }
 
   /* ナビ開いてる時のボタン */
@@ -460,7 +463,7 @@ nav.globalMenuSp-list_item:last-child {
 .top-intro__block > h2 {
   text-align: center;
   padding-top: 80px;
-  margin-bottom: 20px;
+
   // height: 50px;
   width: auto;
   color: #916774;
@@ -470,7 +473,7 @@ nav.globalMenuSp-list_item:last-child {
 
 .top-intro__lead {
   color: #916774;
-  font-size: 1.7rem;
+  font-size: 2rem;
   line-height: 4rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -703,8 +706,8 @@ nav.globalMenuSp-list_item:last-child {
 // FLAVOR↑
 // lineup↓
 .top-lineup {
-  background: url(../images/top/intro/bg.jpg) no-repeat center top;
-  background-size: cover;
+  background: url("../img/background/top-intro_bg.png") no-repeat center 
+  background-size cover;
   padding-top: 116px;
   padding-bottom: 18px;
   position: relative;
@@ -746,7 +749,7 @@ nav.globalMenuSp-list_item:last-child {
   padding-top: 55.26%;
 }
 .top-lineup__txt {
-  font-size: 1.7rem;
+  font-size: 1.1rem;
   line-height: 38px;
   padding: 0 25px;
   letter-spacing: 0.01em;
@@ -770,7 +773,7 @@ nav.globalMenuSp-list_item:last-child {
   padding-top: 10px;
 }
 .top-lineup__buttom {
-  margin-top: 40px;
+  margin-top: 30px;
   }
   .top-lineup__buttom a{
     color: #fff;
@@ -851,15 +854,8 @@ nav.globalMenuSp-list_item:last-child {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 0;
-}
-.top-shop__icon.-icon1 {
-  right: 50px;
+  right: 5%;
   width: 36px;
-}
-.top-shop__icon.-icon2 {
-  right: 75px;
-  width: 40px;
 }
 
 // shop↑
@@ -880,14 +876,14 @@ nav.globalMenuSp-list_item:last-child {
 // .foot-banner
 .foot-banner {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
-    padding: 0px 10%;
 }
 
 .footer_blockBannerItem {
-  margin: 0 37px 32px;
+  margin: 0 73px 32px;
 }
 .footer_blockBannerIcon  {
   width: 120px;
@@ -1118,4 +1114,18 @@ animation-direction: reverse;
     height: 50%;
   }
 }
+.top-intro__inner{
+  display: block;
+}
+.top-intro__wrap{
+  margin: 0 auto;
+  display: contents;
+  top: 40%;
+  left: 20%;
+  position: absolute;
+  justify-content: space-between;
+  width: 87.5vw;
+  max-width: 1415px;
+}
+
 }

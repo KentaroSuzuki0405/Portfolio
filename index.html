@@ -344,10 +344,12 @@
 
         if (window.matchMedia( "(max-width: 751px)" ).matches) {
           /* ウィンドウサイズが 751px以下の場合のコードをここに */
-          // $('.side-scroll__itemOuter').hide();
+          $('.side-scroll__itemOuter').hide();
+          $('.side-scroll__section').hide();
           } else {
           /* ウィンドウサイズが 751px以上の場合のコードをここに */  
-          // $('.side-scroll__itemOuter').show();
+          $('.side-scroll__itemOuter').show();
+          $('.side-scroll__section').show();
           }
       });
     </script>

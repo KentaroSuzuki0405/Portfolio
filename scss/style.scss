@@ -201,10 +201,7 @@ body.opened .head-sns__item::before {
   visibility: hidden;
 }
 .globalMenuSp-logo {
-  width: 210px;
   position: relative;
-  left: 44%;
-  // margin: 10px -6px -6px 43%;
 }
 .globalMenuSp-list {
   text-align: center;
@@ -256,7 +253,7 @@ nav.globalMenuSp-list_item:last-child {
   width: 100px;
   height: 1px;
   background: #b28d99;
-  top: 65%;
+  top: 631px;
   left: 50%;
   position: absolute;
   transform: translateX(-50%);

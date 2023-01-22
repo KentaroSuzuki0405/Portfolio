@@ -37,7 +37,7 @@ scrollTrigger: {
     scrub: true, 
     pin: true,  
     invalidateOnRefresh: true, 
-    anticipatePin: 1, 
+    anticipatePin: 1.5, 
 },
 });
 

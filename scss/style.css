@@ -437,7 +437,6 @@ nav.globalMenuSp-list_item:last-child {
     justify-content: space-between;
   }
   .top-intro__block {
-    width: 40%;
     margin: 0 10%;
   }
   .top-intro__block > h2 {
@@ -484,158 +483,43 @@ nav.globalMenuSp-list_item:last-child {
 .flavor {
   padding-top: 100px;
   padding-bottom: 260px;
-  background: url("../img/background/flavor_bg.jpg") no-repeat center top;
+  background: url("../img/background/flavor_bg.jpg");
   background-size: cover;
   position: relative;
 }
-
 .flavor-title {
   text-align: center;
   margin-bottom: 43px;
   color: #b28d99;
 }
-
-.flavor-title > .en {
-  font-size: 4rem;
+.flavor-title__en {
+  font-size: 3.5rem;
   letter-spacing: 0.04em;
-  line-height: 7rem;
   font-family: century-gothic, sans-serif;
   font-weight: 700;
 }
-
-.flavor-title > .jp {
+.flavor-title__jp {
   font-size: 1.3rem;
   letter-spacing: 0.14em;
   font-weight: 700;
 }
-
 .flavor-item {
   width: 100%;
 }
-
-.flavor-item__photo {
-  position: relative;
-}
-
-.flavor-item__photo::after {
-  content: "";
-  width: 40%;
-  height: 100%;
+.flavor-banner {
+  width: 260px;
+  height: 80px;
+  background-image: url(../img/flavor/flavor__banner.png);
   position: absolute;
-  left: 30%;
-  top: 0;
-  background: url(../images/neko_face_gif.gif) no-repeat center 55%;
-  background-size: contain;
-}
-
-.flavor-item__txt {
-  text-align: center;
-}
-
-.flavor-item__txt > .txt1 {
-  font-size: 6rem;
-  line-height: 7rem;
-  letter-spacing: 0.04em;
-  margin-bottom: 5px;
-}
-
-.flavor-item__txt > .txt2 {
-  font-size: 2.5rem;
-  line-height: 3rem;
-  letter-spacing: 0.04em;
-}
-
-.flavor-item.-white .flavor-item__photo::after {
-  background: url(../images/top/flavor/face_white.gif) no-repeat center 55%;
-  background-size: contain;
+  background-size: cover;
+  right: 5%;
+  top: 13%;
 }
 
 .flavor-slide {
   position: relative;
 }
 
-.flavor-banner {
-  width: 260px;
-  height: 80px;
-  background-image: url("../img/flavor/flavor__banner.png");
-  position: absolute;
-  top: 110px;
-  right: 59px;
-  overflow: hidden;
-  border-radius: 10px 10px;
-  text-align: center;
-}
-
-@media screen and (max-width: 750px) {
-  .flavor {
-    padding-top: 91px;
-    padding-bottom: 100px;
-  }
-  .flavor-title {
-    text-align: center;
-    margin-bottom: 43px;
-    color: #b28d99;
-  }
-  .flavor-title > .en {
-    font-size: 4.3rem;
-    letter-spacing: 0.04em;
-    line-height: 5rem;
-    margin-bottom: 4px;
-  }
-  .flavor-title > .jp {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    letter-spacing: 0.14em;
-    font-weight: 700;
-  }
-  .flavor-item {
-    width: 100%;
-  }
-  .flavor-item__photo {
-    position: relative;
-    margin-bottom: 10px;
-  }
-  .flavor-item__txt {
-    text-align: center;
-  }
-  .flavor-item__txt > .txt1 {
-    font-size: 4.3rem;
-    line-height: 5rem;
-    margin-bottom: 5px;
-  }
-  .flavor-item__txt > .txt2 {
-    font-size: 1.8rem;
-    line-height: 2rem;
-  }
-  .flavor-slide {
-    position: relative;
-    margin-bottom: 19px;
-  }
-  .flavor-slide__nav {
-    width: 20px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-150%);
-    left: 50%;
-    z-index: 3;
-    cursor: pointer;
-  }
-  .flavor-slide__nav img {
-    position: relative;
-    left: 0;
-    transition: all 0.2s ease-out;
-  }
-  .flavor-slide__nav.-l {
-    left: 15px;
-    margin-left: 0;
-  }
-  .flavor-slide__nav.-r {
-    margin-left: 0;
-    left: auto;
-    right: 15px;
-    transform: scale(-1, 1) translateY(-150%);
-  }
-}
 .slider {
   width: 100%;
   margin: 0 auto;
@@ -663,7 +547,7 @@ nav.globalMenuSp-list_item:last-child {
 }
 
 .next-arrow {
-  right: 30%;
+  right: 32%;
 }
 
 .slide__img {
@@ -1105,10 +989,11 @@ p a img:hover {
   .globalMenuSp-logo a img {
     width: 20%;
   }
-  .globalMenuSp-list_item1, .globalMenuSp-list_item2, .globalMenuSp-list_item3 {
+  .globalMenuSp-list_item1, .globalMenuSp-list_item2 {
     font-size: 3rem;
+    letter-spacing: 0.04em;
     font-weight: 700;
-    margin-top: -11px;
+    margin-top: 30px;
   }
   .globalMenuSp-list_item3 {
     margin-top: 40px;
@@ -1143,6 +1028,16 @@ p a img:hover {
   .globalMenuSp_boxItem {
     width: 141px;
   }
+  .globalMenuSp-list_item {
+    text-align: center;
+    margin-bottom: 34px;
+    position: relative;
+  }
+  .globalMenuSp-list_itemJP {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: -9px;
+  }
   .swiper-wrapper {
     width: 100%;
   }
@@ -1158,7 +1053,7 @@ p a img:hover {
     height: 50%;
   }
   .top-intro {
-    height: 295vh;
+    height: 415vh;
     display: block;
     background-color: #f5f5f5;
   }
@@ -1204,6 +1099,69 @@ p a img:hover {
   }
   .top-intro__link img {
     margin-left: 25%;
+  }
+  .flavor {
+    height: 110vh;
+  }
+  .flavor-title {
+    text-align: center;
+    margin-bottom: 43px;
+    color: #b28d99;
+  }
+  .flavor-title__en {
+    font-size: 3rem;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+  }
+  .flavor-title__jp {
+    font-size: 1.3rem;
+    letter-spacing: 0.14em;
+    font-weight: 700;
+  }
+  .flavor-item {
+    width: 100%;
+  }
+  .flavor-item__photo {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .flavor-slider {
+    margin-top: 10%;
+  }
+  .flavor-banner {
+    width: 260px;
+    height: 80px;
+    background-image: url(../img/flavor/flavor__banner.png);
+    position: relative;
+    margin: 0 auto;
+    left: 1%;
+  }
+  .slider {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+  }
+  .slick-slide img {
+    width: 120%;
+  }
+  .slick-slide {
+    margin: 0 10px 0; /* centerPaddingで左右の見える幅を指定してもOK */
+  }
+  .slick-arrow {
+    z-index: 20; /* 矢印画像を最前面へ */
+  }
+  .slide-arrow {
+    position: absolute;
+    top: 40%;
+  }
+  .prev-arrow {
+    left: 0%;
+  }
+  .next-arrow {
+    right: 0%;
+  }
+  .slide__img {
+    width: 300px;
   }
   .top-lineup {
     padding-top: 91px;

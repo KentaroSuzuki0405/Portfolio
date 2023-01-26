@@ -101,45 +101,45 @@
           </div>
         </section>
         <!-- intro↓ -->
-        <section class="top-intro">
-          <div class="side-scroll__section side-scroll__itemOuter">
-            <div class="top-intro__inner">
-              <div class="top-intro__block">
-                <h2 >MILK 100%</h2>
-                <p class="top-intro__lead">かわいいだけじゃない。<br class="min-750">国産小麦とたっぷりミルクの本格派</p>
-                <div class="top-intro__wrap">
-                  <div class="top-intro__wrapimg"><img src="img/intro/intoro1.jpg" width="100%" alt=""></div>
-                  <div class="top-intro__wrapTxt">
-                    <p >コクがあってミルキーで、しっとりもっちりな口あたり。おいしさを追求して、水分は100%ミルクのみ。小麦も国産にこだわりました。ひと口食べるとミルクのうまみがじんわり広がるにゃんともおいしい本格派食パン、誕生です。</p>
-                    <p >Not just cute.<br>
-                    Savour the fresh baked flavor of the bread, made with 100% Japan-grown wheat flour, mixed with creamy milk. <br class="en">Every mouthful of the milky soft bread is rich and moist. Nothing but carefully selected Japanese ingredients. <br class="cont-max950">The succulent bread explodes with flavour with every bite. Come on in and try it. It's purr-fect.</p>
+        <!-- <div class="side-scroll__section side-scroll__itemOuter"> -->
+          <section class="top-intro side-scroll__section side-scroll__itemOuter">
+              <div class="top-intro__inner">
+                <div class="top-intro__block">
+                  <h2 >MILK 100%</h2>
+                  <p class="top-intro__lead">かわいいだけじゃない。<br class="min-750">国産小麦とたっぷりミルクの本格派</p>
+                  <div class="top-intro__wrap">
+                    <div class="top-intro__wrapimg"><img src="img/intro/intoro1.jpg" width="100%" alt=""></div>
+                    <div class="top-intro__wrapTxt">
+                      <p >コクがあってミルキーで、しっとりもっちりな口あたり。おいしさを追求して、水分は100%ミルクのみ。小麦も国産にこだわりました。ひと口食べるとミルクのうまみがじんわり広がるにゃんともおいしい本格派食パン、誕生です。</p>
+                      <p >Not just cute.<br>
+                      Savour the fresh baked flavor of the bread, made with 100% Japan-grown wheat flour, mixed with creamy milk. <br class="en">Every mouthful of the milky soft bread is rich and moist. Nothing but carefully selected Japanese ingredients. <br class="cont-max950">The succulent bread explodes with flavour with every bite. Come on in and try it. It's purr-fect.</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="top-intro__block">
-                <h2>JOY 100%</h2>
-                <p class="top-intro__lead">おいしいだけじゃない。あなたとパンのしあわせな時間。</p>
-                <div class="top-intro__wrap">
-                  <div class="top-intro__wrapimg"><img src="img/intro/intoro2.jpg" width="100%" alt=""></div>
-                  <div class="top-intro__wrapTxt">
-                    <p >ねこの形をしていると、不思議と笑顔があふれます。テーブルを囲む時間がより楽しくなるように、パンのある風景がより明るくなるように。チョコペンで表情を描いて、お気に入りのトッピングをのせて。あなたのしあわせな時間のお手伝いをします。</p>
-                    <p>Not just delicious.<br>
-                    This is your special bread time. <br class="cont-max950">The feline shape naturally brings a smile to your face. As the dinner table centerpiece, it sparks.</p>
-                    <a href="#" class="top-intro__link"><img src="img/intro/Banner.png"></a>
+                <div class="top-intro__block">
+                  <h2>JOY 100%</h2>
+                  <p class="top-intro__lead">おいしいだけじゃない。あなたとパンのしあわせな時間。</p>
+                  <div class="top-intro__wrap">
+                    <div class="top-intro__wrapimg"><img src="img/intro/intoro2.jpg" width="100%" alt=""></div>
+                    <div class="top-intro__wrapTxt">
+                      <p >ねこの形をしていると、不思議と笑顔があふれます。テーブルを囲む時間がより楽しくなるように、パンのある風景がより明るくなるように。チョコペンで表情を描いて、お気に入りのトッピングをのせて。あなたのしあわせな時間のお手伝いをします。</p>
+                      <p>Not just delicious.<br>
+                      This is your special bread time. <br class="cont-max950">The feline shape naturally brings a smile to your face. As the dinner table centerpiece, it sparks.</p>
+                      <a href="#" class="top-intro__link"><img src="img/intro/Banner.png"></a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
+              <!-- </div> -->
+          
+          </section>
+        </div>
         <!-- intoro -->
 
         <!-- flavor↓ -->
         <section class="flavor">
           <h2 class="flavor-title">
-            <p class="en">FLAVOR</p>
-            <p class="jp">フレーバー</p>
+            <p class="flavor-title__en">FLAVOR</p>
+            <p class="flavor-title__jp">フレーバー</p>
           </h2>
           <div class="flavor-slider">
             <div class="slider">
@@ -335,24 +335,46 @@
         }
         });
 
-        $('.slider').slick({
+        // $('.slider').slick({
+        //   infinite: true, // 無限スクロール
+        //   centerMode: true,
+        //   autoplay:false,
+        //   slidesToShow:3,
+        //   prevArrow: '<div class="slide-arrow prev-arrow"><img src="img/icon/arrowLeft.png"></div>',
+        //   nextArrow: '<div class="slide-arrow next-arrow"><img src="img/icon/arrowRight.png"></div>'
+        // });
+
+        if (window.matchMedia( "(max-width: 751px)" ).matches) {
+          /* ウィンドウサイズが 751px以下の場合のコードをここに */
+          $('.slider').slick({
           infinite: true, // 無限スクロール
           centerMode: true,
-          autoplay:false,
-          slidesToShow:3,
+          autoplay:true,
+          slidesToShow:1,
           prevArrow: '<div class="slide-arrow prev-arrow"><img src="img/icon/arrowLeft.png"></div>',
           nextArrow: '<div class="slide-arrow next-arrow"><img src="img/icon/arrowRight.png"></div>'
         });
 
-        // if (window.matchMedia( "(max-width: 751px)" ).matches) {
-        //   /* ウィンドウサイズが 751px以下の場合のコードをここに */
-        //   $('.side-scroll__itemOuter').hide();
-        //   $('.top-intro__inner').hide();
-        //   } else {
-        //   /* ウィンドウサイズが 751px以上の場合のコードをここに */  
-        //   $('.side-scroll__itemOuter').show();
-        //   $('.top-intro__inner').show();
-        //   }
+        // $(".side-scroll__itemOuter").hide();
+        // $(".top-intro__inner").hide();
+       
+
+          } else {
+          /* ウィンドウサイズが 751px以上の場合のコードをここに */  
+            $('.slider').slick({
+              infinite: true, // 無限スクロール
+              centerMode: true,
+              autoplay:false,
+              slidesToShow:3,
+              prevArrow: '<div class="slide-arrow prev-arrow"><img src="img/icon/arrowLeft.png"></div>',
+              nextArrow: '<div class="slide-arrow next-arrow"><img src="img/icon/arrowRight.png"></div>'
+            });
+
+            // $(".side-scroll__section").show();
+            // $(".side-scroll__itemOuter").show();
+            // $(".top-intro__inner").show();
+
+          }
       });
     </script>
   </body>

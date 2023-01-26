@@ -437,6 +437,7 @@ nav.globalMenuSp-list_item:last-child {
     justify-content: space-between;
   }
   .top-intro__block {
+    width: 40%;
     margin: 0 10%;
   }
   .top-intro__block > h2 {

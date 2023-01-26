@@ -3,6 +3,7 @@
 // 基本調整
 .wrap{
   overflow: hidden;
+  outline: 2px red solid;
 }
 a {
   text-decoration: none;
@@ -418,7 +419,7 @@ nav.globalMenuSp-list_item:last-child {
     justify-content: space-between;
   }
   &__block{
-    // width: 40%;
+    width: 40%;
     margin: 0 10%;
     & > h2{
       text-align: center;
@@ -1100,7 +1101,7 @@ animation-direction: reverse;
 
 // 　　　　スクロールトリガー
   .flavor {
-    height: 110vh;
+    height: 154vh;
     &-title{
       text-align: center;
       margin-bottom: 43px;

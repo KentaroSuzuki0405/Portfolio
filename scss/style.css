@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .wrap {
   overflow: hidden;
+  outline: 2px red solid;
 }
 
 a {
@@ -121,7 +122,6 @@ body.opened .head-sns__item::before {
   position: relative;
   width: 80px;
   height: 80px;
-  position: relative;
 }
 
 /*　ハンバーガーボタン　*/
@@ -364,65 +364,6 @@ nav.globalMenuSp-list_item:last-child {
   display: inline;
 }
 
-.top-news__link {
-  width: 130px;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  text-align: center;
-}
-
-.top-news__link > a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  color: #fff;
-  background: #b28d99;
-}
-
-.top-news__link > a > .txt {
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  width: 100%;
-  left: 0;
-  top: 50%;
-  transform: translateY(-38px);
-  position: absolute;
-}
-
-.top-news__link > a > .arrow {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(34px);
-  font-size: 0;
-}
-
-.top-news__link > a > .arrow > p {
-  width: 8px;
-  position: absolute;
-  left: 50%;
-  top: 0;
-}
-
-.top-news__link > a > .arrow > p.arrow1 {
-  transform: translateX(-6px);
-}
-
-.top-news__link > a > .arrow > p.arrow2 {
-  transform: translateX(2px);
-}
-
-.top-news__link > a > .arrow > p img {
-  position: relative;
-  left: 0;
-  transition: all 0.2s ease-out;
-}
-
 @media screen and (min-width: 750px) {
   .top-intro {
     background-image: url("../img/background/top-intro_bg.png");
@@ -433,11 +374,9 @@ nav.globalMenuSp-list_item:last-child {
   }
   .top-intro__inner {
     height: 100%;
-    display: flex;
     justify-content: space-between;
   }
   .top-intro__block {
-    width: 40%;
     margin: 0 10%;
   }
   .top-intro__block > h2 {
@@ -726,7 +665,7 @@ nav.globalMenuSp-list_item:last-child {
 }
 .footer_pattern {
   width: 100%;
-  margin-bottom: 3%;
+  margin-bottom: 20%;
   background: url(/img/pattern.jpg) repeat-x;
 }
 
@@ -750,7 +689,7 @@ nav.globalMenuSp-list_item:last-child {
   font-size: 45px;
   color: #be9066;
   letter-spacing: 0.04em;
-  margin-bottom: 79px;
+  margin-bottom: 10%;
   font-weight: 700;
   text-align: center;
 }
@@ -951,6 +890,9 @@ p a img:hover {
   }
 }
 @media screen and (max-width: 750px) {
+  .min-750 {
+    display: none !important;
+  }
   .head-sns {
     display: none;
   }
@@ -991,34 +933,47 @@ p a img:hover {
     width: 20%;
   }
   .globalMenuSp-list_item1, .globalMenuSp-list_item2 {
-    font-size: 3rem;
+    font-size: 2.7rem;
     letter-spacing: 0.04em;
     font-weight: 700;
-    margin-top: 30px;
   }
   .globalMenuSp-list_item3 {
-    margin-top: 40px;
+    font-size: 2.7rem;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    margin-top: 10%;
+  }
+  .globalMenuSp-list_item3 ::before {
+    content: "";
+    width: 85px;
+    height: 1px;
+    background: #b28d99;
+    top: 47%;
+    transform: translateX(-50%);
+  }
+  .globalMenuSp-list_item3 ::after {
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #b28d99;
+    position: absolute;
+    top: 535px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .globalMenuSp-list {
     margin-top: 20px;
   }
   .head-sns__onList {
-    width: 148px;
     display: flex;
-    position: absolute;
-    left: 43%;
-    top: 70%;
-    bottom: 20%;
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    top: 60px;
   }
-  .head-sns__onList::before {
-    content: "";
-    width: 55px;
-    height: 1px;
-    background: #b28d99;
-    position: absolute;
-    top: -207px;
-    left: 37%;
-    transform: translateX(-50%);
+  .head-sns__onListItem {
+    margin: auto;
+    width: 20%;
   }
   .globalMenuSp_box {
     position: absolute;
@@ -1045,16 +1000,35 @@ p a img:hover {
   .mainVisual {
     display: block;
   }
-  .mainVisual .swiper-container01 {
+  .swiper-container01 {
     width: 100%;
     height: 50%;
   }
-  .mainVisual .swiper-container02 {
+  .swiper-container02 {
     width: 100%;
     height: 50%;
+  }
+  .top-news {
+    padding: 86px 7.9vw 49px;
+  }
+  .top-news__linkTop a > h2 {
+    width: 95px;
+    height: 47px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #b28d99;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 47px;
+  }
+  .top-news__list > li {
+    text-decoration: underline;
   }
   .top-intro {
-    height: 415vh;
+    height: 355vh;
     display: block;
     background-color: #f5f5f5;
   }
@@ -1102,7 +1076,10 @@ p a img:hover {
     margin-left: 25%;
   }
   .flavor {
-    height: 110vh;
+    height: 130vh;
+    padding: 10% 0;
+    background-image: url("/Users/mahiro/Portfolio/img/background/flavor_bg.jpg");
+    background-size: cover;
   }
   .flavor-title {
     text-align: center;
@@ -1258,9 +1235,76 @@ p a img:hover {
   .foot-copyright {
     margin-bottom: -30px;
   }
+  .min-750 {
+    display: none !important;
+    padding: 10px;
+  }
 }
 @media screen and (min-width: 750px) {
   .min-750 {
     display: none !important;
+    padding: 10px;
+  }
+  .top-news__linkTop a > h2 {
+    width: 95px;
+    height: 47px;
+    text-align: center;
+    position: absolute;
+    display: none;
+    background: #b28d99;
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 47px;
+  }
+  .top-news__link {
+    width: 130px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+  }
+  .top-news__link > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: #fff;
+    background: #b28d99;
+  }
+  .top-news__link > a > .txt {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-38px);
+    position: absolute;
+  }
+  .top-news__link > a > .arrow {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(34px);
+    font-size: 0;
+  }
+  .top-news__link > a > .arrow > p {
+    width: 8px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+  }
+  .top-news__link > a > .arrow > p.arrow1 {
+    transform: translateX(-6px);
+  }
+  .top-news__link > a > .arrow > p.arrow2 {
+    transform: translateX(2px);
+  }
+  .top-news__link > a > .arrow > p img {
+    position: relative;
+    left: 0;
+    transition: all 0.2s ease-out;
   }
 }/*# sourceMappingURL=style.css.map */

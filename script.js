@@ -24,8 +24,9 @@ var mySwiper02 = new Swiper ('.swiper-container02', {
 
 // introスクロール
 
-// const itemWrapper = document.querySelector('.top-intro__inner');
-// const itemInner = document.querySelector('.top-intro__block');
+
+// const itemWrapper = document.querySelector('.side-scroll__itemOuter');
+// const itemInner = document.querySelector('.side-scroll__itemInner');
 
 // gsap.to(itemInner, {
 // x: () => -(itemInner.clientWidth - itemWrapper.clientWidth),
@@ -34,11 +35,10 @@ var mySwiper02 = new Swiper ('.swiper-container02', {
 //     trigger: '.side-scroll__section', 
 //     start: 'top top',
 //     end: () => `+=${itemInner.clientWidth - itemWrapper.clientWidth}`,
-//     // markers: true,
-//     scrub: true,
-//     pin: true,
-//     invalidateOnRefresh: true,
-//     anticipatePin: 1.5, 
+//     markers: true,
+//     scrub: true, 
+//     pin: true,  
+//     invalidateOnRefresh: true, 
+//     anticipatePin: 1, 
 // },
 // });
-

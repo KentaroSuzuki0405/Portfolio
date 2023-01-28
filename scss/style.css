@@ -1,6 +1,5 @@
 @charset "UTF-8";
 .wrap {
-  overflow: hidden;
   outline: 2px red solid;
 }
 
@@ -17,10 +16,8 @@ ul, li {
 }
 
 body {
-  -ms-scroll-chaining: none;
-      overscroll-behavior: none;
-  height: 85vh;
-  background-color: #fdfdfd;
+  background-image: url("../img/background/top-intro_bg.png");
+  background-size: cover;
 }
 
 .en {
@@ -338,6 +335,7 @@ nav.globalMenuSp-list_item:last-child {
 .top-news {
   position: relative;
   box-sizing: border-box;
+  background-color: #ffffff;
   padding: 34px 160px 27px 50px;
 }
 
@@ -369,21 +367,25 @@ nav.globalMenuSp-list_item:last-child {
     background-image: url("../img/background/top-intro_bg.png");
     background-size: cover;
     height: 100vh;
-    display: block;
+    width: 100%;
+    left: 0px;
+    top: 0;
     background-color: #f5f5f5;
   }
   .top-intro__inner {
     height: 100%;
+    position: absolute;
     justify-content: space-between;
   }
   .top-intro__block {
+    height: 100vh;
     margin: 0 10%;
   }
   .top-intro__block > h2 {
     text-align: center;
-    padding-top: 80px;
+    padding-top: 17%;
     color: #916774;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
   }
   .top-intro__lead {
@@ -394,7 +396,7 @@ nav.globalMenuSp-list_item:last-child {
     text-align: center;
     margin-bottom: 57px;
     margin-top: 10px;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .top-intro__wrap {
     display: flex;
@@ -408,7 +410,6 @@ nav.globalMenuSp-list_item:last-child {
     width: 50%;
     margin: 0 auto;
     line-height: 2rem;
-    margin: 0 auto;
   }
   .top-intro__wrapTxt > p {
     margin-bottom: 40px;
@@ -890,6 +891,11 @@ p a img:hover {
   }
 }
 @media screen and (max-width: 750px) {
+  .top-news__link {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
   .min-750 {
     display: none !important;
   }
@@ -1037,7 +1043,7 @@ p a img:hover {
     display: block;
   }
   .top-intro__block {
-    margin: 0 5%;
+    padding: 0 5%;
   }
   .top-intro__block > h2 {
     text-align: center;
@@ -1174,8 +1180,6 @@ p a img:hover {
   }
   .top-shop__main {
     display: block;
-    width: 171.5vw;
-    margin-left: 65px;
   }
   .top-shop__title {
     margin: 0 auto 67px;
@@ -1306,5 +1310,83 @@ p a img:hover {
     position: relative;
     left: 0;
     transition: all 0.2s ease-out;
+  }
+}
+/* 共通 */
+.common__section {
+  padding: 100px 0;
+  width: 100%;
+}
+
+.common__container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 900px;
+  width: 80%;
+}
+
+.common__title {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+/* アニメーションなしエリア */
+.empty__container {
+  height: 900px;
+}
+
+.side-scroll__section {
+  background-image: url("../img/background/top-intro_bg.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* はみ出た部分を隠しておく */
+}
+
+.side-scroll__itemOuter {
+  position: relative;
+  height: 700px;
+  width: 100%;
+}
+
+.side-scroll__itemInner {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: flex;
+  gap: 0 265px;
+}
+
+.side-scroll__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 1267px;
+}
+
+@media screen and (max-width: 750px) {
+  .common__container {
+    display: flex;
+    height: 267vh;
+    width: 100%;
+  }
+  .side-scroll__section {
+    display: block;
+    overflow: visible;
+  }
+  .side-scroll__itemInner {
+    position: relative;
+    top: 0px;
+    display: block;
+    margin-left: unset;
+  }
+  .side-scroll__item {
+    display: block;
+    margin-left: unset;
+    height: 150vh;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

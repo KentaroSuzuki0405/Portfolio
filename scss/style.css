@@ -378,8 +378,7 @@ nav.globalMenuSp-list_item:last-child {
     justify-content: space-between;
   }
   .top-intro__block {
-    height: 100vh;
-    margin: 0 10%;
+    height: 106vh;
   }
   .top-intro__block > h2 {
     text-align: center;
@@ -387,6 +386,7 @@ nav.globalMenuSp-list_item:last-child {
     color: #916774;
     font-size: 3rem;
     font-weight: bold;
+    padding-right: 131px;
   }
   .top-intro__lead {
     color: #916774;
@@ -396,19 +396,22 @@ nav.globalMenuSp-list_item:last-child {
     text-align: center;
     margin-bottom: 57px;
     margin-top: 10px;
+    padding-right: 148px;
     font-size: 1.5rem;
   }
   .top-intro__wrap {
     display: flex;
   }
   .top-intro__wrapimg {
-    width: 38%;
-    margin-bottom: 40px;
+    width: 32%;
+    /* margin-right: -61px; */
+    padding-top: 10px;
+    margin-left: 67px;
   }
   .top-intro__wrapTxt {
     color: #916774;
-    width: 50%;
-    margin: 0 auto;
+    width: 46%;
+    margin-left: 43px;
     line-height: 2rem;
   }
   .top-intro__wrapTxt > p {
@@ -1082,7 +1085,7 @@ p a img:hover {
     margin-left: 25%;
   }
   .flavor {
-    height: 130vh;
+    height: 105vh;
     padding: 10% 0;
     background-image: url("/Users/mahiro/Portfolio/img/background/flavor_bg.jpg");
     background-size: cover;
@@ -1188,6 +1191,7 @@ p a img:hover {
     font-size: 0.9rem;
     line-height: 0;
     margin-bottom: 30px;
+    margin-right: -263px;
   }
   .top-shop__link {
     display: block;
@@ -1198,7 +1202,7 @@ p a img:hover {
     position: absolute;
     top: 45%;
     transform: translateY(-50%);
-    right: 5%;
+    right: -99%;
     width: 30px;
   }
   .top-shop__title > .en {
@@ -1211,7 +1215,7 @@ p a img:hover {
   }
   .top-shop__link::before {
     content: "";
-    width: 100%;
+    width: 212%;
     height: 90%;
     position: absolute;
     border-radius: 12px;
@@ -1320,9 +1324,8 @@ p a img:hover {
 
 .common__container {
   display: flex;
-  margin: 0 auto;
-  max-width: 900px;
-  width: 80%;
+  max-width: 987px;
+  width: 100%;
 }
 
 .common__title {
@@ -1356,7 +1359,6 @@ p a img:hover {
   top: 60px;
   left: 0;
   display: flex;
-  gap: 0 265px;
 }
 
 .side-scroll__item {
@@ -1364,7 +1366,13 @@ p a img:hover {
   align-items: center;
   justify-content: center;
   height: 400px;
-  width: 1267px;
+  width: 1086px;
+}
+
+.side-scroll__item2 {
+  width: 1000px;
+  padding-left: 148px;
+  padding-top: 69px;
 }
 
 @media screen and (max-width: 750px) {

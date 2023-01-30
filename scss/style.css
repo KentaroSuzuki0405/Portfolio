@@ -403,14 +403,14 @@ nav.globalMenuSp-list_item:last-child {
     display: flex;
   }
   .top-intro__wrapimg {
-    width: 32%;
+    width: 40%;
     /* margin-right: -61px; */
     padding-top: 10px;
-    margin-left: 67px;
+    margin-left: 26px;
   }
   .top-intro__wrapTxt {
     color: #916774;
-    width: 46%;
+    width: 40%;
     margin-left: 43px;
     line-height: 2rem;
   }
@@ -1359,6 +1359,7 @@ p a img:hover {
   top: 60px;
   left: 0;
   display: flex;
+  gap: 0 1385px;
 }
 
 .side-scroll__item {
@@ -1371,9 +1372,8 @@ p a img:hover {
 
 @media screen and (min-width: 750px) {
   .side-scroll__item2 {
-    width: 1000px;
-    padding-left: 148px;
-    padding-top: 69px;
+    width: 1147px;
+    padding-top: 28px;
   }
 }
 @media screen and (max-width: 750px) {

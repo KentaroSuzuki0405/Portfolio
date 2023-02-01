@@ -379,7 +379,7 @@ nav.globalMenuSp-list_item:last-child {
       color: #916774;
       font-size: 3rem;
       font-weight: bold;
-      padding-right: 131px;
+      // padding-right: 131px;
     }
   }
   &__lead{
@@ -390,7 +390,7 @@ nav.globalMenuSp-list_item:last-child {
     text-align: center;
     margin-bottom: 57px;
     margin-top: 10px;
-    padding-right: 148px;
+    // padding-right: 148px;
     font-size: 1.5rem;
   }
   &__wrap{
@@ -399,7 +399,7 @@ nav.globalMenuSp-list_item:last-child {
       width: 40%;
       /* margin-right: -61px; */
       padding-top: 10px;
-      margin-left: 26px;
+      margin-left: 129px;
     }
     &Txt{
       color: #916774;
@@ -917,29 +917,31 @@ animation-direction: reverse;
     font-size: 2.7rem;
     letter-spacing: 0.04em;
     font-weight: 700;
-    margin-top: 10%;
+    margin-top: 28%;
   }
 
   .globalMenuSp-list_item3 ::before {
     content: "";
-    width: 85px;
+    width: 62px;
     height: 1px;
     background: #b28d99;
-    top: 47%;
+    top: 53%;
     transform: translateX(-50%);
 }
 .globalMenuSp-list_item3 ::after{
   content: "";
-  width: 100px;
+  width: 62px;
   height: 1px;
   background: #b28d99;
   position: absolute;
-  top: 535px;
+  top: 388px;
   left: 50%;
   transform: translateX(-50%);
 }
   .globalMenuSp-list{
-    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
   }
 
   .head-sns__onList{
@@ -959,9 +961,9 @@ animation-direction: reverse;
   }
 .globalMenuSp_box {
   position: absolute;
-  right: 27px;
+  right: -64px;
   display: grid;
-  bottom: 10px;
+  bottom: -241px;
   &Item{
     width: 141px;
   }
@@ -1319,8 +1321,8 @@ animation-direction: reverse;
 .common__container {
   display: flex;
   // margin: 0 auto;
-  max-width: 987px;
-  width: 100%;
+  max-width: 1202px;
+  width: 78%;
 }
 
 .common__title {
@@ -1348,7 +1350,7 @@ animation-direction: reverse;
 .side-scroll__itemOuter {
   position: relative;
   height: 700px;
-  width: 100%;
+  width: 131%;
 }
 
 .side-scroll__itemInner {
@@ -1356,7 +1358,7 @@ animation-direction: reverse;
   top: 60px;
   left: 0;
   display: flex;
-  gap: 0 1385px;
+  column-gap: 923px;
   // background-color: #b28d99;
 }
 
@@ -1366,7 +1368,7 @@ animation-direction: reverse;
   justify-content: center;
   // margin-left: 133px;
   height: 400px;
-  width: 1086px;
+  width: 1205px;
   // background-color: rgb(127, 127, 127);
 }
 
@@ -1375,10 +1377,10 @@ animation-direction: reverse;
 // }
 @media screen and (min-width: 750px){
 .side-scroll__item2{
-  width: 1147px;
-  padding-top: 28px;
+  // width: 1147px;
+  // padding-top: 28px;
   // width: 1000px;
-  // // padding-left: 148px;
+  padding-left: 110px;
   // // padding-right: 73px;
   // padding-top: 28px
   // background-color: #f8f7f1;

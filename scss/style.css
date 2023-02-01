@@ -1087,7 +1087,7 @@ p a img:hover {
   .flavor {
     height: 105vh;
     padding: 10% 0;
-    background-image: url("/img/background/flavor_bg.jpg");
+    background-image: url("../img/background/flavor_bg.jpg");
     background-size: cover;
   }
   .flavor-title {

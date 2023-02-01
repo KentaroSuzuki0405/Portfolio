@@ -1087,7 +1087,7 @@ p a img:hover {
   .flavor {
     height: 105vh;
     padding: 10% 0;
-    background-image: url("/Users/mahiro/Portfolio/img/background/flavor_bg.jpg");
+    background-image: url("../img/background/flavor_bg.jpg");
     background-size: cover;
   }
   .flavor-title {
@@ -1379,7 +1379,7 @@ p a img:hover {
 @media screen and (max-width: 750px) {
   .common__container {
     display: flex;
-    height: 267vh;
+    height: 300vh;
     width: 100%;
   }
   .side-scroll__section {

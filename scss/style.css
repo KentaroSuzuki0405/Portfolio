@@ -1358,8 +1358,8 @@ p a img:hover {
   top: 60px;
   left: 0;
   display: flex;
-  -moz-column-gap: 923px;
-       column-gap: 923px;
+  -moz-column-gap: 900px;
+       column-gap: 900px;
 }
 
 .side-scroll__item {

@@ -3,6 +3,7 @@ var mySwiper01 = new Swiper ('.swiper-container01', {
   slidesPerView: 1,
   loop: true,
   speed: 1000,
+  allowTouchMove:false,
   autoplay: {
       delay: 2000,
       reverseDirection: false,
@@ -13,6 +14,7 @@ var mySwiper02 = new Swiper ('.swiper-container02', {
   direction: 'vertical',
   effect: 'slide',
   slidesPerView: 1,
+  allowTouchMove:false,
   loop: true,
   speed: 1000,
   autoplay: {

@@ -381,6 +381,7 @@
           /* ウィンドウサイズが 751px以下の場合のコードをここに */
           $('.slider').slick({
             infinite: true, // 無限スクロール
+            allowTouchMove:false,
             centerMode: true,
             autoplay:false,
             swipeToSlide: true,
@@ -397,13 +398,17 @@
           } else {
           /* ウィンドウサイズが 751px以上の場合のコードをここに */  
             $('.slider').slick({
-              infinite: true, // 無限スクロール
-              swipeToSlide:true,
-              verticalSwiping: true,
-              touchMove:false,
-              waitForAnimate: true,
-              centerMode: true,
-              autoplay:false,
+              // infinite: true, // 無限スクロール
+
+              swipe:false,
+              // allowTouchMove:false,
+              // swipeToSlide:true,
+              // verticalSwiping: true,
+              // touchMove:false,
+              // waitForAnimate: true,
+              // centerMode: true,
+              // autoplay:false,
+
               slidesToShow:3,
               prevArrow: '<div class="slide-arrow prev-arrow"><img src="img/icon/arrowLeft.png"></div>',
               nextArrow: '<div class="slide-arrow next-arrow"><img src="img/icon/arrowRight.png"></div>'

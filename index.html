@@ -383,7 +383,10 @@
             infinite: true, // 無限スクロール
             centerMode: true,
             autoplay:false,
-            allowTouchMove: false,
+            swipeToSlide: true,
+            waitForAnimate: true,
+            touchMove:false,
+            verticalSwiping:true,
             slidesToShow:1,
             prevArrow: '<div class="slide-arrow prev-arrow"><img src="img/icon/arrowLeft.png"></div>',
             nextArrow: '<div class="slide-arrow next-arrow"><img src="img/icon/arrowRight.png"></div>'
@@ -395,7 +398,10 @@
           /* ウィンドウサイズが 751px以上の場合のコードをここに */  
             $('.slider').slick({
               infinite: true, // 無限スクロール
-              allowTouchMove: false,
+              swipeToSlide:true,
+              verticalSwiping: true,
+              touchMove:false,
+              waitForAnimate: true,
               centerMode: true,
               autoplay:false,
               slidesToShow:3,

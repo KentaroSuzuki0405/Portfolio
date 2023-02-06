@@ -1394,7 +1394,7 @@ p a img:hover {
     width: 100%;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .globalMenuSp_box {
     position: absolute;
     right: -4px;

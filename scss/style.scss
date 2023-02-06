@@ -1059,8 +1059,9 @@ animation-direction: reverse;
       }
     }
   }
-  &__link img{
-    margin-left: 10%;
+  &__link {
+    display: block;
+    text-align: center;
   }
 }
 // // 　　　　スクロールトリガー
@@ -1181,7 +1182,7 @@ animation-direction: reverse;
       font-size: 0.9rem;
       line-height: 0;
       margin-bottom: 30px;
-      margin-right: -333px;
+      margin-right: -109%;
   }
   &__link{
       display: block;
@@ -1415,7 +1416,7 @@ animation-direction: reverse;
 
     display: block;
     margin-left: unset;
-    height: 220vh;
+    height: 154%;
     width: 100%;
   }
 

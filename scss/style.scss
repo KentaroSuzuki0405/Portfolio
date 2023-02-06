@@ -1422,3 +1422,12 @@ animation-direction: reverse;
 
 
 }
+
+@media screen and (min-width: 480px){
+  .globalMenuSp_box {
+    position: absolute;
+    right: -4px;
+    display: grid;
+    bottom: -173px;
+}
+}

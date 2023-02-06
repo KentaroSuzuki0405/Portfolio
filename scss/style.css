@@ -1393,4 +1393,12 @@ p a img:hover {
     height: 154%;
     width: 100%;
   }
+}
+@media screen and (min-width: 480px) {
+  .globalMenuSp_box {
+    position: absolute;
+    right: -4px;
+    display: grid;
+    bottom: -173px;
+  }
 }/*# sourceMappingURL=style.css.map */

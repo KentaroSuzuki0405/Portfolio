@@ -396,17 +396,16 @@ nav.globalMenuSp-list_item:last-child {
   &__wrap{
     display: flex;
     &img{
-      width: 40%;
-      /* margin-right: -61px; */
-      padding-top: 10px;
-      margin-left: 129px;
+      width: 54%;
+      margin-right: 39px;
+      padding-top: 13px;
+      margin-left: 102px;
     }
     &Txt{
       color: #916774;
-      width: 40%;
-      // margin: 0 62px;
+      width: 64%;
       margin-left: 43px;
-      line-height: 2rem;
+      line-height: 2.5rem;
       & > p{
         margin-bottom: 40px;
       }
@@ -1321,8 +1320,8 @@ animation-direction: reverse;
 .common__container {
   display: flex;
   // margin: 0 auto;
-  max-width: 1202px;
-  width: 78%;
+  max-width: 1246px;
+  width: 100%;
 }
 
 .common__title {

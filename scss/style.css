@@ -401,16 +401,16 @@ nav.globalMenuSp-list_item:last-child {
     display: flex;
   }
   .top-intro__wrapimg {
-    width: 40%;
-    /* margin-right: -61px; */
-    padding-top: 10px;
-    margin-left: 129px;
+    width: 54%;
+    margin-right: 39px;
+    padding-top: 13px;
+    margin-left: 102px;
   }
   .top-intro__wrapTxt {
     color: #916774;
-    width: 40%;
+    width: 64%;
     margin-left: 43px;
-    line-height: 2rem;
+    line-height: 2.5rem;
   }
   .top-intro__wrapTxt > p {
     margin-bottom: 40px;
@@ -1323,8 +1323,8 @@ p a img:hover {
 
 .common__container {
   display: flex;
-  max-width: 1202px;
-  width: 78%;
+  max-width: 1246px;
+  width: 100%;
 }
 
 .common__title {

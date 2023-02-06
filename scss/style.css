@@ -1359,8 +1359,8 @@ p a img:hover {
   top: 60px;
   left: 0;
   display: flex;
-  -moz-column-gap: 900px;
-       column-gap: 900px;
+  -moz-column-gap: 605px;
+       column-gap: 605px;
 }
 
 .side-scroll__item {
@@ -1371,11 +1371,6 @@ p a img:hover {
   width: 1205px;
 }
 
-@media screen and (min-width: 750px) {
-  .side-scroll__item2 {
-    padding-left: 110px;
-  }
-}
 @media screen and (max-width: 750px) {
   .common__container {
     display: flex;

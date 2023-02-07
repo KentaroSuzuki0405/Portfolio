@@ -1368,7 +1368,7 @@ p a img:hover {
 
 .side-scroll__itemInner {
   position: absolute;
-  top: 60px;
+  top: 130px;
   left: 0;
   display: flex;
   -moz-column-gap: 605px;

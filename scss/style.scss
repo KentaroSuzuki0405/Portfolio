@@ -109,7 +109,7 @@ body.opened .head-sns__item::before {
   display: flex;
   position: absolute;
   left: 50px;
-  top: 70px;
+  top: 94px;
   &Item {
     margin: 0 47px 0 0;
     position: relative;
@@ -182,7 +182,7 @@ body.opened .head-sns__item::before {
 .globalMenuSp.active {
   opacity: 100;
   visibility: visible;
-  padding-top: 70px;
+  padding-top: 40px;
 }
 .globalMenuSp {
   position: fixed;
@@ -191,7 +191,7 @@ body.opened .head-sns__item::before {
   background: #f8f7f1;
   text-align: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   opacity: 0;
   visibility: hidden;
 }
@@ -200,6 +200,11 @@ body.opened .head-sns__item::before {
 }
 .globalMenuSp-list {
   text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 36px;
+  transform: translate(-50%, -50%);
 }
 
 .globalMenuSp-list_item {
@@ -251,16 +256,16 @@ nav.globalMenuSp-list_item:last-child {
   width: 100px;
   height: 1px;
   background: #b28d99;
-  top: 529px;
+  top: 292px;
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
 }
 .globalMenuSp_box{
   position: absolute;
-  right: 52px;
+  right: 10px;
   display: grid;
-  bottom: 50px;
+  bottom: 10px;
   &Item {
     width: 180px;
   }
@@ -863,7 +868,7 @@ animation-direction: reverse;
 // 試し
 
 @media screen and (max-width: 750px) {
-  .min-750{
+  .max-750{
     display: none !important;
   }
 
@@ -901,22 +906,31 @@ animation-direction: reverse;
     right: 42px;
   }
   .globalMenuSp-logo{
-    margin-top: -42px;
+    
   }
+  .globalMenuSp.active {
+    opacity: 100;
+    visibility: visible;
+    padding-top: 17px;
+}
   .globalMenuSp-logo a img {
-    width: 20%;
+    width: 140px;
+    margin-bottom: 10px;
   }
   .globalMenuSp-list_item1,.globalMenuSp-list_item2{
     font-size: 2.7rem;
     letter-spacing: 0.04em;
     font-weight: 700;
+    line-height: 1;
+    margin-bottom: 35px;
     // margin-top: 30px;
   }
   .globalMenuSp-list_item3{
     font-size: 2.7rem;
     letter-spacing: 0.04em;
     font-weight: 700;
-    margin-top: 28%;
+    line-height: 1;
+    margin-top: 50%;
   }
 
   .globalMenuSp-list_item3 ::before {
@@ -924,7 +938,7 @@ animation-direction: reverse;
     width: 62px;
     height: 1px;
     background: #b28d99;
-    top: 53%;
+    top: 48%;
     transform: translateX(-50%);
 }
 .globalMenuSp-list_item3 ::after{
@@ -933,14 +947,14 @@ animation-direction: reverse;
   height: 1px;
   background: #b28d99;
   position: absolute;
-  top: 388px;
+  top: 430px;
   left: 50%;
   transform: translateX(-50%);
 }
   .globalMenuSp-list{
-    position: relative;
     display: inline-block;
     margin: 0 auto;
+    top: 45%;
   }
 
   .head-sns__onList{
@@ -949,7 +963,7 @@ animation-direction: reverse;
     position: relative;
     margin: 0 auto;
     left: 0;
-    top: 60px;
+    top: 110px;
     &Item {
       margin: auto;
       width: 20%;
@@ -960,9 +974,7 @@ animation-direction: reverse;
   }
 .globalMenuSp_box {
   position: absolute;
-  right: -64px;
   display: grid;
-  bottom: -241px;
   &Item{
     width: 141px;
   }
@@ -974,7 +986,7 @@ animation-direction: reverse;
   &JP{
     font-size: 1rem;
     font-weight: 700;
-    margin-top: -9px;
+    margin-top: 6px;
   }
 }
 
@@ -1237,7 +1249,7 @@ animation-direction: reverse;
 .foot-copyright{
   margin-bottom: -30px;
 }
-.min-750{
+.max-750{
   display: none !important;
   padding: 10px;
 }
@@ -1247,6 +1259,9 @@ animation-direction: reverse;
   .min-750{
     display: none !important;
     padding: 10px;
+  }
+  .pc-block{
+    display: none !important;
   }
   .top-news__linkTop a > h2{
     width: 95px;
@@ -1377,13 +1392,7 @@ animation-direction: reverse;
 // }
 @media screen and (min-width: 750px){
 .side-scroll__item2{
-  // width: 1147px;
-  // padding-top: 28px;
-  // width: 1000px;
-  // padding-left: 110px;
-  // // padding-right: 73px;
-  // padding-top: 28px
-  // background-color: #f8f7f1;
+
 }
 }
 @media screen and (max-width: 750px) {
@@ -1409,23 +1418,9 @@ animation-direction: reverse;
   }
 
   .side-scroll__item {
-    // display: block;
-    // margin-left: 0px;
-    // height: 193vh;
-    // width: 100%;
-
     display: block;
     margin-left: unset;
     height: 154%;
     width: 100%;
   }
-}
-
-@media screen and (max-width: 480px){
-  .globalMenuSp_box {
-    position: absolute;
-    right: -4px;
-    display: grid;
-    bottom: -173px;
-}
 }

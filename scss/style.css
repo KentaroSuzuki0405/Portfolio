@@ -982,6 +982,7 @@ p a img:hover {
   .globalMenuSp-list {
     display: inline-block;
     margin: 0 auto;
+    top: 45%;
     margin-top: 20px;
   }
   .head-sns__onList {

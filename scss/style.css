@@ -383,7 +383,7 @@ nav.globalMenuSp-list_item:last-child {
     justify-content: space-between;
   }
   .top-intro__block {
-    height: 110vh;
+    height: 100vh;
   }
   .top-intro__block > h2 {
     text-align: center;
@@ -1368,7 +1368,7 @@ p a img:hover {
 
 .side-scroll__itemInner {
   position: absolute;
-  top: 100px;
+  top: 130px;
   left: 0;
   display: flex;
   -moz-column-gap: 605px;
